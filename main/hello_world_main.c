@@ -9,22 +9,22 @@ TaskHandle_t thirdTaskHandle = NULL;
 
 void firstTask(void *arg){
     while(1){
-        printf("Task 1 - 1000m");
-        vTaskDelay(1000 / portTICK_period_MS);
+        printf("Task 1 - 1000m \n");
+        vTaskDelay(1000 / portTICK_PERIOD_MS);
     }
 }
 
 void secondTask(void *arg){
     while(1){
-        printf("Task 2 - 100ms");
-        vTaskDelay(100 / portTICK_period_MS);
+        printf("Task 2 - 100ms \n");
+        vTaskDelay(100 / portTICK_PERIOD_MS);
     }
 }
 
 void thirdTask(void *arg){
     while(1){
-        printf("Task 3 - 3000ms");
-        vTaskDelay(3000 / portTICK_period_MS);
+        printf("Task 3 - 3000ms \n");
+        vTaskDelay(3000 / portTICK_PERIOD_MS);
     }
 }
 
